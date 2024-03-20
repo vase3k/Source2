@@ -1,18 +1,18 @@
 //import checkNumInputs from './checkNumInputs';
 
-import { setTimeout } from "core-js";
+import { setTimeout } from 'core-js';
 
 const forms = () => {
     const form = document.querySelectorAll('form'),
         input = document.querySelectorAll('input'),
-        upload = document.querySelectorAll("[name='upload']")
+        upload = document.querySelectorAll('[name=\'upload\']');
 
     //checkNumInputs("input[name='user_phone']");
 
     const message = {
-        loading: "Loading",
+        loading: 'Loading',
         success: 'Thank you! You will be contacted soon',
-        failure: "Something went wrong...",
+        failure: 'Something went wrong...',
         spinner: 'assets/img/spinner.gif',
         ok: 'assets/img/ok.png',
         fail: 'assets/img/fail.png'
@@ -91,7 +91,7 @@ const forms = () => {
 
                 .catch(() => {
                     statusImg.setAttribute('src', message.fail);
-                    statusMessage.textContent = message.failure
+                    statusMessage.textContent = message.failure;
                 })
 
                 .finally(() => {
