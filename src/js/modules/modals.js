@@ -22,7 +22,7 @@ const modals = () => {
 
                 windows.forEach(item => {
                     item.style.display = 'none';
-                    item.classList.add('animated', 'fadeIn')
+                    item.classList.add('animated', 'fadeIn');
                 });
 
                 modal.style.display = 'block';
@@ -36,9 +36,9 @@ const modals = () => {
                 item.style.display = 'none';
             });
 
-            modal.style.display = "none";
+            modal.style.display = 'none';
             document.body.style.overflow = '';
-            document.body.style.marginRight = "0px";
+            document.body.style.marginRight = '0px';
         });
 
         modal.addEventListener('click', (e) => {
@@ -47,9 +47,9 @@ const modals = () => {
                     item.style.display = 'none';
                 });
 
-                modal.style.display = "none";
+                modal.style.display = 'none';
                 document.body.style.overflow = '';
-                document.body.style.marginRight = "0px";
+                document.body.style.marginRight = '0px';
             }
         });
     }
@@ -97,9 +97,9 @@ const modals = () => {
         });
     }
 
-    bindModal('.button-design', ".popup-design", '.popup-design .popup-close');
+    bindModal('.button-design', '.popup-design', '.popup-design .popup-close');
     bindModal('.button-consultation', '.popup-consultation', '.popup-consultation .popup-close');
-    bindModal('.fixed-gift', ".popup-gift", '.popup-gift .popup-close', true);
+    bindModal('.fixed-gift', '.popup-gift', '.popup-gift .popup-close', true);
     openByScroll('.fixed-gift');
     //showModalByTime('.popup-consultation', 4000);
 };
